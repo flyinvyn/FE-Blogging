@@ -1,0 +1,19 @@
+.card{
+    height: 580px;
+    border: 1px solid silver;
+    border-radius: 15px;
+}
+
+.card img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card h5{
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}

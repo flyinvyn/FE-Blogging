@@ -1,0 +1,49 @@
+.avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.bar{
+    position: absolute;
+
+    right: 0;
+}
+
+.bar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.brand{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.brand:hover{
+    color: blue;
+}
+
+
+.login{
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.login:hover{
+    background-color: aqua;
+    transition: 0.75s;
+}
+
+@media only screen and (max-width: 600px) {
+    .bar{
+        margin-top: 15px;
+    }
+  }

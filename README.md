@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Blogging Platform Application Readme
+## Overview
+This repository contains the source code and related resources for a modern and feature-rich blogging platform application. The application provides a user-friendly interface for bloggers to create, manage, and publish their content online.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
++ **User Authentication**: Secure user authentication system allowing bloggers to register, log in, and manage their accounts.
+**Create and Edit Article**: Write and edit blog posts using a rich text editor with various formatting options.
++ **Search Functionality**: Implement a search feature to help users quickly find relevant content.
++ **Responsive Design**: Ensure the application is accessible and usable on various devices, including desktops, tablets, and smartphones.
 
-## Available Scripts
+## Technologies Used
+### Frontend:
 
-In the project directory, you can run:
++ HTML5, CSS3, JavaScript
++ React.js for building the user interface
++ Axios for handling HTTP requests
 
-### `npm start`
+## Setup
+1.Clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+git clone https://github.com/flyinvyn/FE-Blogging
+```
+2.Go To Folder Repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+cd FE-Blogging
+```
+3.Install dependencies for the frontend:
 
-### `npm test`
+```
+npm i / npm Install
+```
+4.Set up the environment variables:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+REACT_APP_BASEURL = [API_URL]
+```
+Run the application:
 
-### `npm run build`
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Related Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+:rocket: [`Backend`](https://github.com/flyinvyn/BE-Blogging)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:rocket: [`Frontend`](https://github.com/flyinvyn/FE-Blogging)

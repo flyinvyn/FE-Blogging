@@ -6,6 +6,7 @@ import DetailArticle from './Pages/DetailArticle/[id]';
 import ProfileUser from './Pages/Profile/ProfileUser';
 import Articles from './Pages/Articles/Articles';
 import ListArticle from './Pages/ListArticle/ListArticle';
+import RequireAuth from './Auth/RequireAuth';
 
 function App() {
   return (
@@ -13,12 +14,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/article/:id' element={<DetailArticle />} />
+          <Route path='/article/:id' element={<RequireAuth><DetailArticle /></RequireAuth>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/profile' element={<ProfileUser />} />
-          <Route path='/profile/article/create' element={<Articles />} />
-          <Route path='/profile/article/list' element={<ListArticle />} />
+          <Route path='/profile' element={<RequireAuth><ProfileUser /></RequireAuth>} />
+          <Route path='/profile/article/create' element={<RequireAuth><Articles /></RequireAuth>} />
+          <Route path='/profile/article/list' element={<RequireAuth><ListArticle /></RequireAuth>} />
         </Routes>
       </BrowserRouter>
     </>

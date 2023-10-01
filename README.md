@@ -48,4 +48,4 @@ npm start
 
 :rocket: [`Frontend`](https://github.com/flyinvyn/FE-Blogging)
 
-:rocket: [`Demo`](https://fe-blogging.vercel.app/)
+:rocket: [`Demo`](https://fe-blogging.vercel.app)

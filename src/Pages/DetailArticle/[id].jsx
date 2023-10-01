@@ -31,7 +31,7 @@ const DetailArticle = () => {
               <img src={item.articles_photo} className="card-img-top image" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">{item.articles_title}</h5> <br />
-                <p className="card-text">{item.articles_content}</p> <br />
+                <p className="card-text" style={{whiteSpace:"pre-line"}}>{item.articles_content}</p> <br />
                 <span className='d-flex align-items-center'>
                   <img src={item.users_photo} style={{ width: "50px", height: "50px", borderRadius: "50%" }} alt="avatar" />
                   <p className="card-text mx-3">{item.articles_writer}</p></span>

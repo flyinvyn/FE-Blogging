@@ -91,7 +91,7 @@ const ListArticle = () => {
                                 <div className=" col-md-12 border-bottom">
                                     <div className="row">
                                         <div className="col-md-12 p-0">
-                                            <h4 className="font-weight-bold p-2">My product</h4>
+                                            <h4 className="font-weight-bold p-2">My articles</h4>
                                         </div>
                                     </div>
                                     {/* <hr /> */}

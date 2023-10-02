@@ -7,8 +7,8 @@ import axios from 'axios'
 const Login = () => {
     const navigate = useNavigate()
     const [data, setData] = useState({
-        users_email:"",
-        users_confirmpassword:""
+        users_email: "",
+        users_confirmpassword: ""
     });
 
     const Toast = Swal.mixin({
@@ -35,16 +35,25 @@ const Login = () => {
         e.preventDefault();
         axios.post(`${process.env.REACT_APP_BASEURL}/api/users/login`, data)
             .then((res) => {
-                Toast.fire({
-                    title:
-                        "Login Succesfuly!",
-                    icon: "success",
-                })
-                localStorage.setItem("token", res.data.data.token_user)
-                localStorage.setItem("id", res.data.data.users_id)
-                navigate('/')
+                if (res.data.statusCode === 201) {
+                    Toast.fire({
+                        title:
+                            "Login Succesfuly!",
+                        icon: "success",
+                    })
+                    localStorage.setItem("token", res.data.data.token_user)
+                    localStorage.setItem("id", res.data.data.users_id)
+                    navigate('/')
+                } else {
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Login failed',
+                        text: 'Email or password wrong!',
+                      })
+                }
             })
             .catch((err) => {
+
                 console.log(err);
             })
     }
@@ -54,7 +63,7 @@ const Login = () => {
             <h2>Login</h2>
             <form>
                 <div className="form-group">
-                    <label htmlFor="username"><span style={{color:"red"}}>*</span>Email:</label>
+                    <label htmlFor="username"><span style={{ color: "red" }}>*</span>Email:</label>
                     <input
                         type="email"
                         name='users_email'
@@ -64,7 +73,7 @@ const Login = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password"><span style={{color:"red"}}>*</span>Password:</label>
+                    <label htmlFor="password"><span style={{ color: "red" }}>*</span>Password:</label>
                     <input
                         type="password"
                         name='users_confirmpassword'
